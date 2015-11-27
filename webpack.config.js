@@ -1,5 +1,4 @@
 var ExtractText = require('extract-text-webpack-plugin');
-var Copy = require('copy-webpack-plugin');
 var LessClean = require('less-plugin-clean-css');
 var HtmlFile = require('html-webpack-plugin');
 var webpack = require('webpack');
@@ -70,11 +69,8 @@ var export_config = {
   },
 
   plugins: Object.assign([
-    new ExtractText('[name].css'),
-    new Copy([
-      { from: './asset', to: 'asset' }
-    ])
-    ], config.plugins)
+    new ExtractText('[name].css')
+  ], config.plugins)
 };
 
 var k;
