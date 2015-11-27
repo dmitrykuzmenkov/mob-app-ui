@@ -15,5 +15,20 @@
   "bugs": {
     "url": "https://github.com/dmitrykuzmenkov/mob-app-ui/issues"
   },
-  "homepage": "https://github.com/dmitrykuzmenkov/mob-app-ui#readme"
+  "homepage": "https://github.com/dmitrykuzmenkov/mob-app-ui#readme",
+  "devDependencies": {
+    "autoprefixer": "^6.1.1",
+    "autoprefixer-loader": "^3.1.0",
+    "copy-webpack-plugin": "^0.2.0",
+    "css-loader": "^0.23.0",
+    "extract-text-webpack-plugin": "^0.9.1",
+    "file-loader": "^0.8.5",
+    "html-webpack-plugin": "^1.7.0",
+    "less": "^2.5.3",
+    "less-loader": "^2.2.2",
+    "less-plugin-clean-css": "^1.5.1",
+    "style-loader": "^0.13.0",
+    "webpack": "^1.12.9",
+    "webpack-dev-server": "^1.14.0"
+  }
 }
