@@ -1,0 +1,19 @@
+{
+  "name": "mob-app-ui",
+  "version": "1.0.0",
+  "description": "Mobile CSS UI for hybrid application development",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dmitrykuzmenkov/mob-app-ui.git"
+  },
+  "author": "Dmitry Kuzmenkov <dmitry@wagh.ru> (http://dmitrykuzmenkov.ru)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/dmitrykuzmenkov/mob-app-ui/issues"
+  },
+  "homepage": "https://github.com/dmitrykuzmenkov/mob-app-ui#readme"
+}
