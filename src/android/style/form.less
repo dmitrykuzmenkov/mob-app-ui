@@ -11,7 +11,62 @@ fieldset {
     font-weight: 600;
     color: #757575;
   }
+
+  p.switch {
+    label {
+      position: static;
+    }
+    input[type="checkbox"] {
+      appearance: none;
+      outline: none;
+      position: absolute;
+      right: 0;
+      width: 100%;
+      height: 100%;
+
+      &:before {
+        content:"";
+        position:absolute;
+        right: 16px;
+        top: -4px;
+        height:24px;
+        width:24px;
+        border-radius:50%;
+        display:block;
+        background:#2196f3;
+        border:none;
+        z-index:2;
+        box-shadow:inset 0 0 0 16px #757575,0 0 5px 0 #000;
+        transform: translateZ(0);
+        transition:transform 300ms ease-in 0s;
+      }
+
+      &:after {
+        content:"";
+        right: 0;
+        width:36px;
+        height:16px;
+        background:#2196f3;
+        box-shadow: inset 0 0 0 16px #757575;
+        border-radius:16px;
+        display:block;
+        position:absolute;
+        z-index:1;
+        transition:all 300ms ease-in 0s;
+      }
+
+      &:checked:before {
+        transform: translateX(16px);
+        box-shadow:inset 0 0 0 0 #2196f3, 0 0 5px 0 #000;
+      }
+
+      &:checked:after {
+        box-shadow: inset 0 0 0 0 #2196f3;
+      }
+    }
+  }
 }
+
 fieldset > p {
   position: relative;
   margin-top: 1em;
@@ -20,7 +75,7 @@ fieldset > p {
     overflow: hidden;
     height: 3em;
   }
-  input,
+  input[type="text"],
   textarea {
     box-sizing: border-box;
     background-color: transparent;
@@ -96,6 +151,8 @@ fieldset > p {
     opacity: 0.5;
   }
 }
+
+
 @-webkit-keyframes inputHighlighter {
   from {
     background: #2196f3;
