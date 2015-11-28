@@ -149,55 +149,44 @@ fieldset > p {
 
     &:focus {
       outline: none;
-      & ~ .bar:before,
       & ~ .bar:after {
-        width: 50%;
+        transform: scale3d(1, 1, 1);
       }
       & ~ .highlight {
-        animation: inputHighlighter 0.3s ease;
+        animation: inputHighlighter 150ms ease-in-out;
       }
     }
 
     &:focus ~ label, &:valid ~ label {
-      top: -13px;
-      font-size: 13px;
+      transform: translate3d(0, -13px, 0) scale3d(.8, .8, 1);
       color: @main_color;
     }
   }
   label {
     color: #757575;
     font-size: 16px;
+    transform: translate3d(0, 5px, 0) scale3d(1, 1, 1);
     font-weight: normal;
     position: absolute;
     pointer-events: none;
     left: 0;
-    top: 5px;
-    transition: 0.2s ease all;
-    -moz-transition: 0.2s ease all;
-    -webkit-transition: 0.2s ease all;
+    top: 0;
+    transition: transform 150ms ease-in-out;
   }
   .bar {
     position: relative;
     display: block;
     width: auto;
-    &:before,
     &:after {
       content: "";
       height: 2px;
-      width: 0;
+      width: 100%;
       bottom: 0;
       position: absolute;
       background: @main_color;
       box-sizing: border-box;
-      transition: 0.2s ease all;
-      -moz-transition: 0.2s ease all;
-      -webkit-transition: 0.2s ease all;
-    }
-    &:before {
-      left: 50%;
-    }
-    &:after {
-      right: 50%;
+      transform: scale3d(0, 0, 0);
+      transition: transform 150ms ease-in-out;
     }
   }
   .highlight {
