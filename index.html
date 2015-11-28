@@ -9,192 +9,235 @@
     <meta name="googlebot" content="noarchive"/>
     <link rel="shortcut icon" type="image/x-icon" href="/asset/img/favicon.ico"/>
     <title>Mobile Application UI</title>
+    <script>
+
+      var show_page1 = function () {
+        var p1 = document.getElementById('page1');
+        var p2 = document.getElementById('page2');
+
+        p2.classList.remove('page-active');
+        p1.classList.add('page-active');
+
+      };
+
+      var show_page2 = function (direction) {
+        var p1 = document.getElementById('page1');
+        var p2 = document.getElementById('page2');
+
+        p2.className = 'page page-swap page-' + direction;
+        window.requestAnimationFrame(function() {
+          p1.classList.remove('page-active');
+          p2.classList.remove('page-swap');
+          p2.classList.add('page-active');
+        });
+      };
+    </script>
   </head>
   <body>
-    <header>
-      <a class="back"><i class="icon icon-back"></i></a>
-      <h1>Hello its header</h1>
-    </header>
-    <main>
-      <section>
-        <h2>Here goes some text</h2>
-        <article>
-          <h3>Title for article</h3>
-          <p>First paragraph with some text here.</p>
-          <p>Second paragraph with some text here.</p>
-          <p>Third paragraph with some text here.</p>
-          <p>Paragraph <a href="">with link</a> to check it that all works properly.</p>
-        </article>
-      </section>
-      <section>
-        <h2>Simple list goes here</h2>
-        <ul>
-          <li>Line 1</li>
-          <li>Line 2</li>
-          <li>Line 3</li>
-          <li>Line 4</li>
-          <li>Line 5</li>
-        </ul>
-      </section>
-      <section>
-        <h2>Some buttons example</h2>
-        <p>
-          <button>Simple</button>
-          <button class="button-raised">Raised</button>
-          <button class="button-raised button-fill">Fill</button>
-        </p>
-        <p><button class="button-raised button-fill button-block">Block button</button></p>
-        <p><button class="button-raised button-fill button-float"><i class="icon icon-plus"></i></button></p>
-      </section>
-      <section>
-        <h2>Time for form</h2>
-        <form action="" method="post">
-          <fieldset>
-            <legend>Group of input #1</legend>
-            <p>
-              <input type="text" name="text1" required/>
-              <span class="bar"></span>
-              <span class="highlight"></span>
-              <label>Text 1</label>
-            </p>
-            <p>
-              <input type="text" name="text2" required/>
-              <span class="bar"></span>
-              <span class="highlight"></span>
-              <label>Text 2</label>
-            </p>
-          </fieldset>
-          <fieldset>
-            <legend>Group of input #2</legend>
-            <p>
-              <input type="text" name="text3" required/>
-              <span class="bar"></span>
-              <span class="highlight"></span>
-              <label>Text 3</label>
-            </p>
-            <p>
-              <input type="text" name="text4" required/>
-              <span class="bar"></span>
-              <span class="highlight"></span>
-              <label>Text 4</label>
-            </p>
-          </fieldset>
-          <fieldset>
-            <legend>Switches</legend>
-            <p class="switch">
-              <input type="checkbox" name="switch1"/>
-              <label>Switch me</label>
-            </p>
-            <p class="switch">
-              <input type="checkbox" name="switch2"/>
-              <label>Switch me</label>
-            </p>
-          </fieldset>
-          <fieldset>
-            <legend>Radio buttons</legend>
-            <p onclick="document.getElementById('radio-popup').classList.add('popup-show');">Click me</p>
-            <div id="radio-popup" class="popup">
-              <section>
-                <h3>Radio buttons example</h3>
-                <p class="radio">
-                  <input type="radio" name="radio" value="radio1"/>
-                  <label>Radio 1</label>
-                </p>
-                <p class="radio">
-                  <input type="radio" name="radio" value="radio2"/>
-                  <label>Radio 2</label>
-                </p>
-                <p class="radio">
-                  <input type="radio" name="radio" value="radio3"/>
-                  <label>Radio 3</label>
-                </p>
-                <p class="align-right">
-                  <button onclick="document.getElementById('radio-popup').classList.remove('popup-show')">Close it</button>
-                </p>
-              </section>
-            </div>
-            <div class="overlay"></div>
-          </fieldset>
-          <p><button class="button-raised button-fill button-block">Submit</button></p>
-        </form>
-      </section>
-      <section>
-        <button class="button-block" onclick="document.getElementById('popup').classList.add('popup-show');">Show popup</button>
-        <div id="popup" class="popup">
-          <section>
-            <h3>Popup example</h3>
-            <p>Hello its just a popup</p>
-            <p>More text goes here. More text goes here. More text goes here. More text goes here. More text goes here. More text goes here.</p>
-            <p class="align-right">
-              <button onclick="document.getElementById('popup').classList.remove('popup-show')">Close it</button>
-            </p>
-          </section>
-        </div>
-        <div class="overlay"></div>
-      </section>
-      <section>
-        <h2>Lets show some icons</h2>
-        <p style="background-color: #000">
-          <i class="icon icon-back"></i>
-          <i class="icon icon-forward"></i>
-          <i class="icon icon-bars"></i>
-          <i class="icon icon-prev"></i>
-          <i class="icon icon-next"></i>
-          <i class="icon icon-plus"></i>
-        </p>
-        <p>
-          <i class="icon icon-camera"></i>
-          <i class="icon icon-calendar"></i>
-          <i class="icon icon-email"></i>
-          <i class="icon icon-comment"></i>
-          <i class="icon icon-settings"></i>
-        </p>
-      </section>
+    <div id="page1" class="page page-active">
+      <header>
+        <a class="back"><i class="icon icon-back"></i></a>
+        <h1>Hello its header</h1>
+      </header>
+      <main>
+        <section>
+          <h2>Here goes some text</h2>
+          <article>
+            <h3>Title for article</h3>
+            <p>You can <a onclick="show_page2('right');">click</a> to show next page.</p>
+            <p><a onclick="show_page2('top')">Show top</a>, <a onclick="show_page2('left')">Show left</a>, <a onclick="show_page2('right')">Show right</a>, <a onclick="show_page2('bottom')">Show bottom</a></p>
+            <p>Second paragraph with some text here.</p>
+            <p>Third paragraph with some text here.</p>
+            <p>Paragraph <a href="">with link</a> to check it that all works properly.</p>
+          </article>
+        </section>
+        <section>
+          <h2>Simple list goes here</h2>
+          <ul>
+            <li>Line 1</li>
+            <li>Line 2</li>
+            <li>Line 3</li>
+            <li>Line 4</li>
+            <li>Line 5</li>
+          </ul>
+        </section>
+        <section>
+          <h2>Some buttons example</h2>
+          <p>
+            <button>Simple</button>
+            <button class="button-raised">Raised</button>
+            <button class="button-raised button-fill">Fill</button>
+          </p>
+          <p><button class="button-raised button-fill button-block">Block button</button></p>
+          <p><button class="button-raised button-fill button-float"><i class="icon icon-plus"></i></button></p>
+        </section>
+        <section>
+          <h2>Time for form</h2>
+          <form action="" method="post">
+            <fieldset>
+              <legend>Group of input #1</legend>
+              <p>
+                <input type="text" name="text1" required/>
+                <span class="bar"></span>
+                <span class="highlight"></span>
+                <label>Text 1</label>
+              </p>
+              <p>
+                <input type="text" name="text2" required/>
+                <span class="bar"></span>
+                <span class="highlight"></span>
+                <label>Text 2</label>
+              </p>
+            </fieldset>
+            <fieldset>
+              <legend>Group of input #2</legend>
+              <p>
+                <input type="text" name="text3" required/>
+                <span class="bar"></span>
+                <span class="highlight"></span>
+                <label>Text 3</label>
+              </p>
+              <p>
+                <input type="text" name="text4" required/>
+                <span class="bar"></span>
+                <span class="highlight"></span>
+                <label>Text 4</label>
+              </p>
+            </fieldset>
+            <fieldset>
+              <legend>Switches</legend>
+              <p class="switch">
+                <input type="checkbox" name="switch1"/>
+                <label>Switch me</label>
+              </p>
+              <p class="switch">
+                <input type="checkbox" name="switch2"/>
+                <label>Switch me</label>
+              </p>
+            </fieldset>
+            <fieldset>
+              <legend>Radio buttons</legend>
+              <p onclick="document.getElementById('radio-popup').classList.add('popup-show');">Click me</p>
+              <div id="radio-popup" class="popup">
+                <section>
+                  <h3>Radio buttons example</h3>
+                  <p class="radio">
+                    <input type="radio" name="radio" value="radio1"/>
+                    <label>Radio 1</label>
+                  </p>
+                  <p class="radio">
+                    <input type="radio" name="radio" value="radio2"/>
+                    <label>Radio 2</label>
+                  </p>
+                  <p class="radio">
+                    <input type="radio" name="radio" value="radio3"/>
+                    <label>Radio 3</label>
+                  </p>
+                  <p class="align-right">
+                    <button onclick="document.getElementById('radio-popup').classList.remove('popup-show')">Close it</button>
+                  </p>
+                </section>
+              </div>
+              <div class="overlay"></div>
+            </fieldset>
+            <p><button class="button-raised button-fill button-block">Submit</button></p>
+          </form>
+        </section>
+        <section>
+          <button class="button-block" onclick="document.getElementById('popup').classList.add('popup-show');">Show popup</button>
+          <div id="popup" class="popup">
+            <section>
+              <h3>Popup example</h3>
+              <p>Hello its just a popup</p>
+              <p>More text goes here. More text goes here. More text goes here. More text goes here. More text goes here. More text goes here.</p>
+              <p class="align-right">
+                <button onclick="document.getElementById('popup').classList.remove('popup-show')">Close it</button>
+              </p>
+            </section>
+          </div>
+          <div class="overlay"></div>
+        </section>
+        <section>
+          <h2>Lets show some icons</h2>
+          <p style="background-color: #000">
+            <i class="icon icon-back"></i>
+            <i class="icon icon-forward"></i>
+            <i class="icon icon-bars"></i>
+            <i class="icon icon-prev"></i>
+            <i class="icon icon-next"></i>
+            <i class="icon icon-plus"></i>
+          </p>
+          <p>
+            <i class="icon icon-camera"></i>
+            <i class="icon icon-calendar"></i>
+            <i class="icon icon-email"></i>
+            <i class="icon icon-comment"></i>
+            <i class="icon icon-settings"></i>
+          </p>
+        </section>
 
-      <section class="card-list">
-        <article>
-          <h3>Hello from article title</h3>
-          <p>Some funny content goes here</p>
-          <p class="align-right"><button>Some button</button></p>
-        </article>
-        <article>
-          <h3>Hello from article title</h3>
-          <p>Some funny content goes here</p>
-          <p class="align-right"><button>Some button</button></p>
-        </article>
-        <article>
-          <h3>Hello from article title</h3>
-          <p>Some funny content goes here</p>
-          <p class="align-right"><button>Some button</button></p>
-        </article>
-      </section>
+        <section class="card-list">
+          <article>
+            <h3>Hello from article title</h3>
+            <p>Some funny content goes here</p>
+            <p class="align-right"><button>Some button</button></p>
+          </article>
+          <article>
+            <h3>Hello from article title</h3>
+            <p>Some funny content goes here</p>
+            <p class="align-right"><button>Some button</button></p>
+          </article>
+          <article>
+            <h3>Hello from article title</h3>
+            <p>Some funny content goes here</p>
+            <p class="align-right"><button>Some button</button></p>
+          </article>
+        </section>
 
-      <section class="link-list">
-        <h2>Simple block link list</h2>
-        <ul>
-          <li>Link 1</li>
-          <li>Link 2</li>
-          <li>Link 3</li>
-        </ul>
-      </section>
+        <section class="link-list">
+          <h2>Simple block link list</h2>
+          <ul>
+            <li>Link 1</li>
+            <li>Link 2</li>
+            <li>Link 3</li>
+          </ul>
+        </section>
 
-      <section class="link-list">
-        <h2>Simple block link list</h2>
-        <ul>
-          <li>Link 1</li>
-          <li>Link 2</li>
-          <li>Link 3</li>
-        </ul>
-      </section>
+        <section class="link-list">
+          <h2>Simple block link list</h2>
+          <ul>
+            <li>Link 1</li>
+            <li>Link 2</li>
+            <li>Link 3</li>
+          </ul>
+        </section>
 
-      <section class="link-list">
-        <ul>
-          <li>Link 1</li>
-          <li>Link 2</li>
-          <li>Link 3</li>
-        </ul>
-      </section>
-    </main>
-
+        <section class="link-list">
+          <ul>
+            <li>Link 1</li>
+            <li>Link 2</li>
+            <li>Link 3</li>
+          </ul>
+        </section>
+      </main>
+    </div>
+    <div id="page2" class="page page-right">
+      <header>
+        <a class="back" onclick="show_page1()"><i class="icon icon-back"></i></a>
+        <h1>Hello its header</h1>
+      </header>
+      <main>
+        <section>
+          <h2>Here goes some text</h2>
+          <article>
+            <h3>Title for article</h3>
+            <p>First paragraph with some text here.</p>
+            <p>Second paragraph with some text here.</p>
+            <p>Third paragraph with some text here.</p>
+            <p>Paragraph <a href="">with link</a> to check it that all works properly.</p>
+          </article>
+        </section>
+      </main>
+    </div>
   </body>
 </html>
