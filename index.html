@@ -120,6 +120,17 @@
       </section>
       <section>
         <button class="button-block" onclick="document.getElementById('popup').classList.add('popup-show');">Show popup</button>
+        <div id="popup" class="popup">
+          <section>
+            <h3>Popup example</h3>
+            <p>Hello its just a popup</p>
+            <p>More text goes here. More text goes here. More text goes here. More text goes here. More text goes here. More text goes here.</p>
+            <p class="align-right">
+              <button onclick="document.getElementById('popup').classList.remove('popup-show')">Close it</button>
+            </p>
+          </section>
+        </div>
+        <div class="overlay"></div>
       </section>
       <section>
         <h2>Lets show some icons</h2>
@@ -140,17 +151,23 @@
         </p>
       </section>
 
-      <div id="popup" class="popup">
-        <section>
-          <h3>Popup example</h3>
-          <p>Hello its just a popup</p>
-          <p>More text goes here. More text goes here. More text goes here. More text goes here. More text goes here. More text goes here.</p>
-          <p class="align-right">
-            <button onclick="document.getElementById('popup').classList.remove('popup-show')">Close it</button>
-          </p>
-        </section>
-      </div>
-      <div class="overlay"></div>
+      <section class="card-list">
+        <article>
+          <h3>Hello from article title</h3>
+          <p>Some funny content goes here</p>
+          <p class="align-right"><button>Some button</button></p>
+        </article>
+        <article>
+          <h3>Hello from article title</h3>
+          <p>Some funny content goes here</p>
+          <p class="align-right"><button>Some button</button></p>
+        </article>
+        <article>
+          <h3>Hello from article title</h3>
+          <p>Some funny content goes here</p>
+          <p class="align-right"><button>Some button</button></p>
+        </article>
+      </section>
     </main>
 
   </body>
