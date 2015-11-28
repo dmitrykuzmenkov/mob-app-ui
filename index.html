@@ -92,6 +92,22 @@
           <p><button class="button-raised button-fill button-block">Submit</button></p>
         </form>
       </section>
+      <section>
+        <button class="button-block" onclick="document.getElementById('popup').classList.add('popup-show');">Show popup</button>
+      </section>
+
+      <div id="popup" class="popup">
+        <section>
+          <h3>Popup example</h3>
+          <p>Hello its just a popup</p>
+          <p>More text goes here. More text goes here. More text goes here. More text goes here. More text goes here. More text goes here.</p>
+          <p class="align-right">
+            <button onclick="document.getElementById('popup').classList.remove('popup-show')">Close it</button>
+          </p>
+        </section>
+      </div>
+      <div class="overlay"></div>
     </main>
+
   </body>
 </html>

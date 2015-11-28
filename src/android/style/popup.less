@@ -1,0 +1,24 @@
+.popup {
+  display: block;
+  background-color: #fff;
+  margin: 0.7rem 0.5rem;
+  vertical-align: top;
+  box-shadow: 0 3px 7px 0 rgba(0,0,0,0.26);
+  position: fixed;
+  z-index: 201;
+  top: 0;
+  width: 96%;
+  height: 100%;
+  height: auto;
+  margin: 2%;
+  transform: translateY(-120%) translateZ(0);
+  transition: transform 150ms ease-in;
+  &.popup-show {
+    display: block;
+    transform: translateY(10%);
+
+    & ~ .overlay {
+      display: block;
+    }
+  }
+}
