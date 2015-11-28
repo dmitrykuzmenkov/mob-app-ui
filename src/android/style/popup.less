@@ -12,11 +12,11 @@
   height: 100%;
   height: auto;
   margin: 2%;
-  transform: translateY(-120%) translateZ(0);
+  transform: translate3d(0, -120%, 0);
   transition: transform 150ms ease-in-out;
   &.popup-show {
     display: block;
-    transform: translateY(10%);
+    transform: translate3d(0, 10%, 0);
 
     & ~ .overlay {
       display: block;
