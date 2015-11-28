@@ -1,0 +1,125 @@
+fieldset {
+  border: none;
+  margin: 0;
+  padding: 0;
+
+  legend {
+    display: block;
+    padding-top: 1em;
+    width: 100%;
+    font-size: 14px;
+    font-weight: 600;
+    color: #757575;
+  }
+}
+fieldset > p {
+  position: relative;
+  margin-top: 1em;
+  textarea {
+    resize: none;
+    overflow: hidden;
+    height: 3em;
+  }
+  input,
+  textarea {
+    box-sizing: border-box;
+    background-color: transparent;
+    width: 100%;
+    padding-top: 100px;
+    font-size: 17px;
+    padding: 5px 0;
+    display: block;
+    border: none;
+    border-bottom: 1px solid #757575;
+    margin-top: 1em;
+
+    &:focus {
+      outline: none;
+      & ~ .bar:before,
+      & ~ .bar:after {
+        width: 50%;
+      }
+      & ~ .highlight {
+        animation: inputHighlighter 0.3s ease;
+      }
+    }
+
+    &:focus ~ label, &:valid ~ label {
+      top: -13px;
+      font-size: 13px;
+      color: #2196f3;
+    }
+  }
+  label {
+    color: #757575;
+    font-size: 16px;
+    font-weight: normal;
+    position: absolute;
+    pointer-events: none;
+    left: 0;
+    top: 5px;
+    transition: 0.2s ease all;
+    -moz-transition: 0.2s ease all;
+    -webkit-transition: 0.2s ease all;
+  }
+  .bar {
+    position: relative;
+    display: block;
+    width: auto;
+    &:before,
+    &:after {
+      content: "";
+      height: 2px;
+      width: 0;
+      bottom: 0;
+      position: absolute;
+      background: #2196f3;
+      box-sizing: border-box;
+      transition: 0.2s ease all;
+      -moz-transition: 0.2s ease all;
+      -webkit-transition: 0.2s ease all;
+    }
+    &:before {
+      left: 50%;
+    }
+    &:after {
+      right: 50%;
+    }
+  }
+  .highlight {
+    position: absolute;
+    height: 60%;
+    width: 100px;
+    top: 25%;
+    left: 0;
+    pointer-events: none;
+    opacity: 0.5;
+  }
+}
+@-webkit-keyframes inputHighlighter {
+  from {
+    background: #2196f3;
+  }
+  to {
+    width: 0;
+    background: transparent;
+  }
+}
+@-moz-keyframes inputHighlighter {
+  from {
+    background: #2196f3;
+  }
+  to {
+    width: 0;
+    background: transparent;
+  }
+}
+@keyframes inputHighlighter {
+  from {
+    background: #2196f3;
+  }
+  to {
+    width: 0;
+    background: transparent;
+  }
+}
