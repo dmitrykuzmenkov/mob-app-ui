@@ -82,12 +82,37 @@
             <legend>Switches</legend>
             <p class="switch">
               <input type="checkbox" name="switch1"/>
-              <label class="label">Switch me</label>
+              <label>Switch me</label>
             </p>
             <p class="switch">
               <input type="checkbox" name="switch2"/>
-              <label lass="label">Switch me</label>
+              <label>Switch me</label>
             </p>
+          </fieldset>
+          <fieldset>
+            <legend>Radio buttons</legend>
+            <p onclick="document.getElementById('radio-popup').classList.add('popup-show');">Click me</p>
+            <div id="radio-popup" class="popup">
+              <section>
+                <h3>Radio buttons example</h3>
+                <p class="radio">
+                  <input type="radio" name="radio" value="radio1"/>
+                  <label>Radio 1</label>
+                </p>
+                <p class="radio">
+                  <input type="radio" name="radio" value="radio2"/>
+                  <label>Radio 2</label>
+                </p>
+                <p class="radio">
+                  <input type="radio" name="radio" value="radio3"/>
+                  <label>Radio 3</label>
+                </p>
+                <p class="align-right">
+                  <button onclick="document.getElementById('radio-popup').classList.remove('popup-show')">Close it</button>
+                </p>
+              </section>
+            </div>
+            <div class="overlay"></div>
           </fieldset>
           <p><button class="button-raised button-fill button-block">Submit</button></p>
         </form>
