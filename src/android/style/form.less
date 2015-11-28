@@ -37,10 +37,10 @@ fieldset {
         width:24px;
         border-radius:50%;
         display:block;
-        background:#2196f3;
+        background:@main_color;
         border:none;
         z-index:2;
-        box-shadow:inset 0 0 0 16px #757575,0 0 5px 0 #000;
+        box-shadow:inset 0 0 0 16px #757575,0 0 1px 0 #000;
         transform: translateZ(0);
         transition:transform 300ms ease-in 0s;
       }
@@ -50,7 +50,7 @@ fieldset {
         right: 0;
         width:36px;
         height:16px;
-        background:#2196f3;
+        background:@main_color;
         box-shadow: inset 0 0 0 16px #757575;
         border-radius:16px;
         display:block;
@@ -61,11 +61,11 @@ fieldset {
 
       &:checked:before {
         transform: translateX(16px);
-        box-shadow:inset 0 0 0 0 #2196f3, 0 0 5px 0 #000;
+        box-shadow:inset 0 0 0 0 @main_color, 0 0 1px 0 #000;
       }
 
       &:checked:after {
-        box-shadow: inset 0 0 0 0 #2196f3;
+        box-shadow: inset 0 0 0 0 @main_color;
       }
     }
   }
@@ -107,13 +107,13 @@ fieldset {
         top: 5px;
         width: 10px;
         height: 10px;
-        background-color: #2196f3;
+        background-color: @main_color;
         border-radius: 50%;
       }
 
       &:checked {
         &:before {
-          border-color: #2196f3;
+          border-color: @main_color;
         }
 
         &:after {
@@ -159,7 +159,7 @@ fieldset > p {
     &:focus ~ label, &:valid ~ label {
       top: -13px;
       font-size: 13px;
-      color: #2196f3;
+      color: @main_color;
     }
   }
   label {
@@ -185,7 +185,7 @@ fieldset > p {
       width: 0;
       bottom: 0;
       position: absolute;
-      background: #2196f3;
+      background: @main_color;
       box-sizing: border-box;
       transition: 0.2s ease all;
       -moz-transition: 0.2s ease all;
@@ -212,7 +212,7 @@ fieldset > p {
 
 @-webkit-keyframes inputHighlighter {
   from {
-    background: #2196f3;
+    background: @main_color;
   }
   to {
     width: 0;
@@ -221,7 +221,7 @@ fieldset > p {
 }
 @-moz-keyframes inputHighlighter {
   from {
-    background: #2196f3;
+    background: @main_color;
   }
   to {
     width: 0;
@@ -230,7 +230,7 @@ fieldset > p {
 }
 @keyframes inputHighlighter {
   from {
-    background: #2196f3;
+    background: @main_color;
   }
   to {
     width: 0;
