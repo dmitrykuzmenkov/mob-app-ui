@@ -22,7 +22,7 @@ var config = {
       }, {
         test: /\.less$/,
         loader: ExtractText.extract(
-          'css!autoprefixer?browsers=last 5 version' +
+          'css!autoprefixer?browsers=Android >= 4 iOS >= 7' +
           '!less?config=lessLoaderCustom'
         )
       }
