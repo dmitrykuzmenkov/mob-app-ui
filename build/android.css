@@ -160,13 +160,9 @@ section ~ .link-list {
 .link-list {
   background-color: #f5f5f5;
   display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-  -webkit-flex-direction: column;
-      -ms-flex-direction: column;
           flex-direction: column;
   margin: 0;
   padding: 0;
@@ -195,37 +191,23 @@ header {
           backface-visibility: hidden;
   color: #fff;
   box-shadow: 0 3px 7px 0 rgba(0, 0, 0, 0.26);
-  -webkit-flex-shrink: 0;
-      -ms-flex-negative: 0;
-          flex-shrink: 0;
+  flex-shrink: 0;
   display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
   display: flex;
 }
 header h1 {
   display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
   display: flex;
   -webkit-box-flex: 1;
-  -webkit-flex-grow: 1;
-      -ms-flex-positive: 1;
           flex-grow: 1;
 }
 header a.back,
 header a.menu {
   display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
   display: flex;
   -webkit-box-flex: 0;
-  -webkit-flex-grow: 0;
-      -ms-flex-positive: 0;
           flex-grow: 0;
   -webkit-box-align: center;
-  -webkit-align-items: center;
-      -ms-flex-align: center;
           align-items: center;
   line-height: 56px;
   height: 56px;
@@ -247,23 +229,13 @@ nav {
           backface-visibility: hidden;
   color: #fff;
   border-bottom: 1px solid #cbcbcb;
-  -webkit-flex-shrink: 0;
-      -ms-flex-negative: 0;
-          flex-shrink: 0;
+  flex-shrink: 0;
   display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-justify-content: space-around;
-      -ms-flex-pack: distribute;
-          justify-content: space-around;
+  justify-content: space-around;
   -webkit-box-align: center;
-  -webkit-align-items: center;
-      -ms-flex-align: center;
           align-items: center;
-  -webkit-align-content: center;
-      -ms-flex-line-pack: center;
-          align-content: center;
+  align-content: center;
 }
 nav a,
 nav a:visited,
@@ -272,20 +244,12 @@ nav a:hover {
   border-right: 1px solid #cbcbcb;
   line-height: 56px;
   display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
   display: flex;
   -webkit-box-flex: 1;
-  -webkit-flex: 1 1 auto;
-      -ms-flex: 1 1 auto;
           flex: 1 1 auto;
   -webkit-box-pack: center;
-  -webkit-justify-content: center;
-      -ms-flex-pack: center;
           justify-content: center;
-  -webkit-align-self: stretch;
-      -ms-flex-item-align: stretch;
-          align-self: stretch;
+  align-self: stretch;
   font-size: 14px;
   font-weight: 700;
 }
@@ -314,7 +278,6 @@ button {
   line-height: 36px;
   box-sizing: border-box;
   -webkit-appearance: none;
-     -moz-appearance: none;
           appearance: none;
   background: 0 0;
   padding: 0 10px;
@@ -354,8 +317,6 @@ button.button-float {
   position: fixed;
   z-index: 100;
   display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
   display: flex;
   right: 16px;
   bottom: 16px;
@@ -367,32 +328,20 @@ button.button-float {
           transition-duration: 300ms;
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
   -webkit-box-align: center;
-  -webkit-align-items: center;
-      -ms-flex-align: center;
           align-items: center;
   -webkit-box-pack: center;
-  -webkit-justify-content: center;
-      -ms-flex-pack: center;
           justify-content: center;
 }
 .button-list {
   display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
   display: flex;
 }
 .button-list button {
   display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
   display: flex;
   -webkit-box-flex: 1;
-  -webkit-flex-grow: 1;
-      -ms-flex-positive: 1;
           flex-grow: 1;
   -webkit-box-pack: center;
-  -webkit-justify-content: center;
-      -ms-flex-pack: center;
           justify-content: center;
 }
 article {
@@ -405,13 +354,9 @@ section ~ .card-list {
 .card-list {
   background-color: #f5f5f5;
   display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-  -webkit-flex-direction: column;
-      -ms-flex-direction: column;
           flex-direction: column;
   margin: 0;
   padding: 0 8px;
@@ -447,7 +392,6 @@ fieldset p.switch label {
 fieldset p.switch input[type="checkbox"] {
   margin: 0;
   -webkit-appearance: none;
-     -moz-appearance: none;
           appearance: none;
   outline: none;
   position: absolute;
@@ -489,7 +433,6 @@ fieldset p.switch input[type="checkbox"]:after {
 }
 fieldset p.switch input[type="checkbox"]:checked:before {
   -webkit-transform: translateX(16px);
-      -ms-transform: translateX(16px);
           transform: translateX(16px);
   box-shadow: inset 0 0 0 0 #ff9800, 0 0 2px 0 #c5c5c5;
 }
@@ -508,7 +451,6 @@ fieldset p.radio label {
 fieldset p.radio input[type="radio"] {
   margin: 0;
   -webkit-appearance: none;
-     -moz-appearance: none;
           appearance: none;
   outline: none;
   position: absolute;
@@ -562,7 +504,6 @@ fieldset > p input[type="text"],
 fieldset > p textarea,
 fieldset > p select {
   -webkit-appearance: none;
-     -moz-appearance: none;
           appearance: none;
   outline: none;
   border-radius: 0;
@@ -760,16 +701,10 @@ h1 {
   text-overflow: ellipsis;
   white-space: nowrap;
   line-height: 56px;
-  -webkit-flex-shrink: 10;
-      -ms-flex-negative: 10;
-          flex-shrink: 10;
+  flex-shrink: 10;
   display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-  -webkit-align-items: center;
-      -ms-flex-align: center;
           align-items: center;
 }
 h2 {
@@ -883,6 +818,5 @@ button.button-float:after {
   position: relative;
   opacity: 1;
   -webkit-transform: none;
-      -ms-transform: none;
           transform: none;
 }

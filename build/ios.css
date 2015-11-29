@@ -109,13 +109,9 @@ section ~ .link-list {
 .link-list {
   background-color: #f5f5f5;
   display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-  -webkit-flex-direction: column;
-      -ms-flex-direction: column;
           flex-direction: column;
   margin: 0;
   padding: 0;
@@ -149,41 +145,25 @@ header {
   -webkit-backface-visibility: hidden;
           backface-visibility: hidden;
   color: #000;
-  -webkit-flex-shrink: 0;
-      -ms-flex-negative: 0;
-          flex-shrink: 0;
+  flex-shrink: 0;
   display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
-  -webkit-justify-content: space-between;
-      -ms-flex-pack: justify;
           justify-content: space-between;
 }
 header h1 {
   -webkit-box-flex: 1;
-  -webkit-flex-grow: 1;
-      -ms-flex-positive: 1;
           flex-grow: 1;
   -webkit-box-pack: center;
-  -webkit-justify-content: center;
-      -ms-flex-pack: center;
           justify-content: center;
 }
 header a.back,
 header a.menu {
   display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
   display: flex;
   -webkit-box-flex: 0;
-  -webkit-flex-grow: 0;
-      -ms-flex-positive: 0;
           flex-grow: 0;
   -webkit-box-align: center;
-  -webkit-align-items: center;
-      -ms-flex-align: center;
           align-items: center;
   line-height: 44px;
   height: 44px;
@@ -206,26 +186,14 @@ nav {
   -webkit-backface-visibility: hidden;
           backface-visibility: hidden;
   border-bottom: 1px solid #cbcbcb;
-  -webkit-align-self: center;
-      -ms-flex-item-align: center;
-          align-self: center;
+  align-self: center;
   display: -webkit-box;
-  display: -ms-flexbox;
-  display: -webkit-flex;
   display: flex;
-  -webkit-flex-shrink: 0;
-      -ms-flex-negative: 0;
-          flex-shrink: 0;
-  -webkit-justify-content: space-around;
-      -ms-flex-pack: distribute;
-          justify-content: space-around;
+  flex-shrink: 0;
+  justify-content: space-around;
   -webkit-box-align: center;
-  -webkit-align-items: center;
-      -ms-flex-align: center;
           align-items: center;
-  -webkit-flex-wrap: nowrap;
-      -ms-flex-wrap: nowrap;
-          flex-wrap: nowrap;
+  flex-wrap: nowrap;
 }
 nav a,
 nav a:visited,
@@ -240,7 +208,6 @@ nav a:hover {
   line-height: 27px;
   box-sizing: border-box;
   -webkit-appearance: none;
-     -moz-appearance: none;
           appearance: none;
   background: 0 0;
   padding: 0 10px;
@@ -296,7 +263,6 @@ button {
   border-radius: 5px;
   line-height: 27px;
   -webkit-appearance: none;
-     -moz-appearance: none;
           appearance: none;
   background: 0 0;
   padding: 0 10px;
@@ -326,16 +292,10 @@ button.button-fill {
   width: 100%;
 }
 .button-list {
-  -webkit-align-self: center;
-      -ms-flex-item-align: center;
-          align-self: center;
+  align-self: center;
   display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-flex-wrap: nowrap;
-      -ms-flex-wrap: nowrap;
-          flex-wrap: nowrap;
+  flex-wrap: nowrap;
 }
 .button-list button {
   border: 1px solid #2196f3;
@@ -366,13 +326,9 @@ section ~ .card-list {
 .card-list {
   background-color: #f5f5f5;
   display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-  -webkit-flex-direction: column;
-      -ms-flex-direction: column;
           flex-direction: column;
   margin: 0;
   padding: 0 8px;
@@ -402,7 +358,6 @@ fieldset p.switch label {
 }
 fieldset p.switch input[type="checkbox"] {
   -webkit-appearance: none;
-     -moz-appearance: none;
           appearance: none;
   outline: 0;
   border: none;
@@ -449,7 +404,6 @@ fieldset p.switch input[type="checkbox"]:after {
 }
 fieldset p.switch input[type="checkbox"]:checked:before {
   -webkit-transform: translateX(20px);
-      -ms-transform: translateX(20px);
           transform: translateX(20px);
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.4);
 }
@@ -469,7 +423,6 @@ fieldset p.radio label {
 }
 fieldset p.radio input[type=radio] {
   -webkit-appearance: none;
-     -moz-appearance: none;
           appearance: none;
   position: absolute;
   outline: 0;
@@ -504,7 +457,6 @@ fieldset > p input[type="text"],
 fieldset > p textarea,
 fieldset > p select {
   -webkit-appearance: none;
-     -moz-appearance: none;
           appearance: none;
   outline: none;
   border-radius: 0;
@@ -729,16 +681,10 @@ h1 {
   text-overflow: ellipsis;
   white-space: nowrap;
   line-height: 56px;
-  -webkit-flex-shrink: 10;
-      -ms-flex-negative: 10;
-          flex-shrink: 10;
+  flex-shrink: 10;
   display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-  -webkit-align-items: center;
-      -ms-flex-align: center;
           align-items: center;
 }
 h2 {
@@ -809,6 +755,5 @@ h3 {
   position: relative;
   opacity: 1;
   -webkit-transform: none;
-      -ms-transform: none;
           transform: none;
 }
