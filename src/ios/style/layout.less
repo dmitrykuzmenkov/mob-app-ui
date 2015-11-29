@@ -1,0 +1,52 @@
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+body {
+  font-family: -apple-system,SF UI Text,Helvetica Neue,Helvetica,Arial,sans-serif;;
+  margin: 0;
+  padding: 0;
+  color: #212121;
+  font-size: 14px;
+  line-height: 1.5;
+  background: #fff;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+a,
+a:active,
+a:visited,
+a:focus {
+  cursor: pointer;
+  text-decoration: none;
+  line-height: normal;
+  color: initial;
+}
+section {
+  margin: 32px 0;
+  padding: 0 16px;
+  box-sizing: border-box;
+  main > &:last-child {
+    margin-bottom: 0;
+  }
+  p > a {
+    text-decoration: none;
+    color: @primary_color;
+  }
+}
+p {
+  margin: 16px 0 0;
+}
+.overlay {
+  display: none;
+  position: fixed;
+  z-index: 200;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #000;
+  opacity: 0.2;
+  overflow: hidden;
+}
