@@ -125,7 +125,7 @@ ul {
   padding: 0;
 }
 ul li {
-  display: list-item;
+  display: block;
   text-align: -webkit-match-parent;
   min-height: 48px;
   line-height: 48px;
@@ -261,6 +261,9 @@ nav {
   -webkit-align-items: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-align-content: center;
+      -ms-flex-line-pack: center;
+          align-content: center;
 }
 nav a,
 nav a:visited,
@@ -877,6 +880,7 @@ button.button-float:after {
           transform: translate3d(0, -100%, 0);
 }
 .page.page-active {
+  position: relative;
   opacity: 1;
   -webkit-transform: none;
       -ms-transform: none;
