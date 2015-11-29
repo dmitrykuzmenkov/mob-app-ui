@@ -23,6 +23,9 @@ a:focus {
   line-height: normal;
   color: initial;
 }
+a:active {
+  opacity: .5;
+}
 section {
   margin: 32px 0;
   padding: 0 16px;
@@ -33,6 +36,10 @@ section {
   p > a {
     text-decoration: none;
     color: @primary_color;
+
+    &:active {
+      color: @primary_color;
+    }
   }
 }
 p {
