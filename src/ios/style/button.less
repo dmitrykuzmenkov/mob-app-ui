@@ -1,6 +1,6 @@
 button {
-  border: 1px solid @primary_color;
   color: @primary_color;
+  border: none;
   text-decoration: none;
   text-align: center;
   display: inline-block;
@@ -19,12 +19,19 @@ button {
   font-family: inherit;
   cursor: pointer;
   outline: 0;
+
+  &.button-raised {
+    border: 1px solid @primary_color;
+  }
+
+  &.button-fill {
+    color: #fff;
+    background: @primary_color;
+    border: none;
+  }
+
 }
-.button-fill {
-  color: #fff;
-  background: @primary_color;
-  border: none;
-}
+
 .button-block {
   width: 100%;
 }
@@ -33,6 +40,7 @@ button {
   display: flex;
   flex-wrap: nowrap;
   button {
+    border: 1px solid @primary_color;
     border-radius: 0;
     border-left-width: 0;
     width: 100%;
