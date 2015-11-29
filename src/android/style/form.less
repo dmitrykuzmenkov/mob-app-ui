@@ -133,10 +133,14 @@ fieldset > p {
   textarea {
     resize: none;
     overflow: hidden;
-    height: 3em;
+    height: 4em;
   }
   input[type="text"],
-  textarea {
+  textarea, select {
+    appearance: none;
+    outline: none;
+    border-radius: 0;
+    height: 2em;
     box-sizing: border-box;
     background-color: transparent;
     width: 100%;
@@ -158,11 +162,12 @@ fieldset > p {
       }
     }
 
-    &:valid ~ label {
+    &:not(select):valid ~ label {
       transform: translate3d(0, -13px, 0) scale3d(.8, .8, 1);
       color: @primary_color;
     }
   }
+
   label {
     color: #757575;
     font-size: 16px;
@@ -198,6 +203,19 @@ fieldset > p {
     left: 0;
     pointer-events: none;
     opacity: 0.5;
+  }
+
+
+  select {
+    direction: rtl;
+    color: #757575;
+    option {
+      direction: ltr;
+    }
+
+    & ~ label {
+      color: inherit;
+    }
   }
 }
 
