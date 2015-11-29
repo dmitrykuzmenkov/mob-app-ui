@@ -1,4 +1,6 @@
-button {
+button, li, nav > a {
+  position: relative;
+  overflow: hidden;
   &:after {
     content: '';
     background: rgba(0,0,0,.2);
@@ -16,15 +18,22 @@ button {
   &:active:after {
     opacity: 1;
     transform: scale3d(0, 0, 0);
-
     transition-duration: 0s;
   }
+}
 
+header {
+  a:after {
+    background: rgba(255,255,255,0.3);
+  }
+}
+button {
   &.button-fill:after {
     background: rgba(255,255,255,0.3);
   }
 
   &.button-float:after {
+    position: absolute;
     margin-left: -120%;
   }
 }
