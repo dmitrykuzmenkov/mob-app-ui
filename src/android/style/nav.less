@@ -1,0 +1,40 @@
+nav {
+  left: 0;
+  top: 56px;
+  width: 100%;
+  height: 56px;
+  font-size: 20px;
+  position: fixed;
+  z-index: 99;
+  background: #fff;
+  backface-visibility: hidden;
+  color: #fff;
+  border-bottom: 1px solid #cbcbcb;
+  flex-shrink: 0;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+
+  a, a:visited, a:active, a:hover {
+    border-right: 1px solid #cbcbcb;
+    line-height: 56px;
+    display: flex;
+    flex: 1 1 auto;
+    justify-content: center;
+    align-self: stretch;
+    font-size: 14px;
+    font-weight: 700;
+
+    &:last-child {
+      border-right: none;
+    }
+
+    &.active {
+      border-bottom: 5px solid @secondary_color;
+    }
+  }
+
+  & ~ main {
+    margin: 128px 0 0 0;
+  }
+}
