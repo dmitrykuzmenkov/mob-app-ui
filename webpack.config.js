@@ -17,8 +17,11 @@ var config = {
   module: {
     loaders: [
       {
-        test: /\.(png|jpg|gif|svg)$/,
-        loader: 'url?limit=8192&name=asset/[name].[ext]'
+        test: /\.(png|jpe?g|gif|svg)$/,
+        loaders: [
+          'url?limit=8192&name=asset/[name].[ext]',
+          'image-webpack?{progressive:true, optimizationLevel: 7, interlaced: false, pngquant:{quality: "75-90", speed: 4}}'
+        ]
       }, {
         test: /\.less$/,
         loader: ExtractText.extract(
