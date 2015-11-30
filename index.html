@@ -31,6 +31,23 @@
           p2.classList.add('page-active');
         });
       };
+
+      var show_menu = function () {
+        var page = document.getElementById('page1');
+        var menu = document.getElementById('menu');
+        page.classList.remove('page-active');
+        menu.classList.add('page-active');
+      };
+
+      document.addEventListener('DOMContentLoaded', function (e, t) {
+        document.getElementById('menu-overlay').addEventListener('click', function (e, t) {
+          console.log('click overlay');
+          var page = document.getElementById('page1');
+          var menu = document.getElementById('menu');
+          menu.classList.remove('page-active');
+          page.classList.add('page-active');
+        });
+      });
     </script>
   </head>
   <body>
@@ -38,7 +55,7 @@
       <header>
         <a class="back"><i class="icon icon-back"></i></a>
         <h1>Hello its header</h1>
-        <a class="menu"><i class="icon icon-bars"></i></a>
+        <a class="menu" onclick="show_menu()"><i class="icon icon-bars"></i></a>
       </header>
       <nav>
         <a class="active">Click 1</a>
@@ -277,5 +294,24 @@
         </section>
       </main>
     </div>
+
+    <div id="menu" class="page page-left page-menu">
+      <header>
+        <h1>Hello its header</h1>
+      </header>
+      <main>
+        <section>
+          <h2>Here goes some text</h2>
+          <article>
+            <h3>Title for article</h3>
+            <p>First paragraph with some text here.</p>
+            <p>Second paragraph with some text here.</p>
+            <p>Third paragraph with some text here.</p>
+            <p>Paragraph <a href="">with link</a> to check it that all works properly.</p>
+          </article>
+        </section>
+      </main>
+    </div>
+    <div id="menu-overlay" class="overlay"></div>
   </body>
 </html>

@@ -2,6 +2,7 @@
   background-color: inherit;
   display: block;
   position: fixed;
+  z-index: 199;
   overflow-y: auto;
   left: 0;
   top: 0;
@@ -11,7 +12,6 @@
   opacity: 1;
   border: none;
   box-sizing: border-box;
-  z-index: 1000;
   width: 100%;
   height: 100%;
   transition: transform 150ms ease-in-out, opacity 150ms ease-in-out;
@@ -49,5 +49,15 @@
     position: relative;
     opacity: 1;
     transform: none;
+  }
+
+  &.page-menu {
+    width: 90%;
+    box-shadow: 0 5px 7px 0 rgba(0,0,0,0.26);
+    z-index: 201;
+    &.page-active  ~ .overlay {
+      visibility: visible;
+      opacity: 1;
+    }
   }
 }
