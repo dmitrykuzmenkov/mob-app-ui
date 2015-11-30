@@ -31,14 +31,31 @@
           p2.classList.add('page-active');
         });
       };
+
+      var show_menu = function () {
+        var page = document.getElementById('page1');
+        var menu = document.getElementById('menu');
+        page.classList.remove('page-active');
+        menu.classList.add('page-active');
+      };
+
+      document.addEventListener('DOMContentLoaded', function (e, t) {
+        document.getElementById('menu-overlay').addEventListener('click', function (e, t) {
+          console.log('click overlay');
+          var page = document.getElementById('page1');
+          var menu = document.getElementById('menu');
+          menu.classList.remove('page-active');
+          page.classList.add('page-active');
+        });
+      });
     </script>
-  <link href="android.css?0290296acf6252cf9764" rel="stylesheet"><script src="android.js?0290296acf6252cf9764"></script></head>
+  <link href="android.css?2429351b85e5528ddf08" rel="stylesheet"><script src="android.js?2429351b85e5528ddf08"></script></head>
   <body>
     <div id="page1" class="page page-active">
       <header>
         <a class="back"><i class="icon icon-back"></i></a>
         <h1>Hello its header</h1>
-        <a class="menu"><i class="icon icon-bars"></i></a>
+        <a class="menu" onclick="show_menu()"><i class="icon icon-bars"></i></a>
       </header>
       <nav>
         <a class="active">Click 1</a>
@@ -251,6 +268,12 @@
             <li>Link 3</li>
           </ul>
         </section>
+        <section>
+          <h2>Preloader example</h2>
+          <p>
+            <span class="preloader"></span>
+          </p>
+        </section>
       </main>
     </div>
     <div id="page2" class="page page-right">
@@ -271,5 +294,37 @@
         </section>
       </main>
     </div>
+
+    <div id="menu" class="page page-left page-menu">
+      <header>
+        <h1>Just simple menu</h1>
+      </header>
+      <main>
+        <section class="link-list">
+          <h2>Here goes links</h2>
+          <ul>
+            <li>Menu Item</li>
+            <li>Menu Item</li>
+            <li>Menu Item</li>
+            <li>Menu Item</li>
+            <li>Menu Item</li>
+            <li>Menu Item</li>
+            <li>Menu Item</li>
+            <li>Menu Item</li>
+            <li>Menu Item</li>
+            <li>Menu Item</li>
+            <li>Menu Item</li>
+            <li>Menu Item</li>
+            <li>Menu Item</li>
+            <li>Menu Item</li>
+            <li>Menu Item</li>
+            <li>Menu Item</li>
+            <li>Menu Item</li>
+            <li>Menu Item</li>
+          </ul>
+        </section>
+      </main>
+    </div>
+    <div id="menu-overlay" class="overlay"></div>
   </body>
 </html>
