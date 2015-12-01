@@ -177,8 +177,7 @@ a:focus {
   color: initial;
 }
 section {
-  margin: 32px 0;
-  padding: 0 16px;
+  padding: 16px;
   box-sizing: border-box;
 }
 main > section:last-child {
@@ -337,7 +336,7 @@ nav a:hover.active {
   box-shadow: 0 1px 0 #ff9800;
 }
 nav ~ main {
-  margin: 128px 0 0 0;
+  margin: 112px 0 0 0;
 }
 button {
   display: inline-block;
@@ -417,6 +416,7 @@ button.button-float {
 article {
   margin-top: 16px;
   background-color: #fff;
+  border-radius: 2px;
 }
 section ~ .card-list {
   border-top: 1px solid #ccc;
@@ -688,6 +688,7 @@ fieldset > p select ~ label {
 .popup {
   display: block;
   background-color: #fff;
+  border-radius: 2px;
   margin: 0.7rem 0.5rem;
   vertical-align: top;
   box-shadow: 0 3px 7px 0 rgba(0, 0, 0, 0.26);

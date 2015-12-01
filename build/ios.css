@@ -279,7 +279,12 @@ nav a:hover {
   color: #2196f3;
   text-decoration: none;
   text-align: center;
-  display: inline-block;
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-flex: 1;
+          flex-grow: 1;
+  -webkit-box-pack: center;
+          justify-content: center;
   border-radius: 5px;
   line-height: 27px;
   box-sizing: border-box;
@@ -372,12 +377,14 @@ button.button-fill {
   display: -webkit-box;
   display: flex;
   flex-wrap: nowrap;
+  width: 100%;
 }
 .button-list button {
   border: 1px solid #2196f3;
   border-radius: 0;
   border-left-width: 0;
-  width: 100%;
+  -webkit-box-flex: 1;
+          flex-grow: 1;
 }
 .button-list button:first-child {
   border-radius: 5px 0 0 5px;
