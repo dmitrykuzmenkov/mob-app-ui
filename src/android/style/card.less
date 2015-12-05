@@ -23,4 +23,32 @@ section ~ .card-list {
       margin-bottom: 16px;
     }
   }
+
+  .row {
+    display: flex;
+
+    .content {
+      display: flex;
+      flex-grow: 1;
+      flex-direction: column;
+    }
+  }
+
+  aside {
+    display: flex;
+    max-width: 15%;
+    &:first-child {
+      margin-right: 8px
+    }
+
+    &:last-child {
+      margin-left: 8px;
+    }
+  }
+
+  .action-list {
+    clear: both;
+    display: block;
+    width: 100%;
+  }
 }
