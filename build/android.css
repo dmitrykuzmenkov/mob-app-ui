@@ -438,6 +438,37 @@ section ~ .card-list {
 .card-list article:last-child {
   margin-bottom: 16px;
 }
+.card-list .row {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+          flex-direction: row;
+}
+.card-list .row .box {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+          flex-direction: column;
+  -webkit-box-flex: 1;
+          flex-grow: 1;
+}
+.card-list aside {
+  display: -webkit-box;
+  display: flex;
+}
+.card-list aside:first-child {
+  margin-right: 8px;
+}
+.card-list aside:last-child {
+  margin-left: 8px;
+}
+.card-list .action-list {
+  clear: both;
+  display: block;
+  width: 100%;
+}
 fieldset {
   border: none;
   margin: 0;

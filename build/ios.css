@@ -369,6 +369,9 @@ button.button-fill {
   background: #2196f3;
   border: none;
 }
+button.button-float {
+  display: none;
+}
 .button-block {
   width: 100%;
 }
@@ -422,6 +425,34 @@ section ~ .card-list {
 }
 .card-list article:last-child {
   margin-bottom: 8px;
+}
+.card-list .row {
+  display: -webkit-box;
+  display: flex;
+}
+.card-list .row .box {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-flex: 1;
+          flex-grow: 1;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+          flex-direction: column;
+}
+.card-list aside {
+  display: -webkit-box;
+  display: flex;
+}
+.card-list aside:first-child {
+  margin-right: 8px;
+}
+.card-list aside:last-child {
+  margin-left: 8px;
+}
+.card-list .action-list {
+  clear: both;
+  display: block;
+  width: 100%;
 }
 fieldset {
   border: none;
