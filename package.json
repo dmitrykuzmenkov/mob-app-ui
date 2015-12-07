@@ -26,6 +26,7 @@
     "file-loader": "^0.8.5",
     "html-webpack-plugin": "^1.7.0",
     "image-webpack-loader": "^1.6.2",
+    "jext": "^0.2.2",
     "less": "^2.5.3",
     "less-loader": "^2.2.2",
     "less-plugin-clean-css": "^1.5.1",
