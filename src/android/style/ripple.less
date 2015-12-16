@@ -1,39 +1,54 @@
-button, li, nav > a {
+button {
   position: relative;
   overflow: hidden;
   &:after {
     content: '';
-    background: rgba(0,0,0,.2);
     display: block;
     position: absolute;
-    border-radius: 50%;
-    padding-top: 240%;
-    padding-left: 240%;
-    margin-top: -100%;
-    margin-left: -50%;
-    opacity: 0;
-    transform: scale3d(1, 1, 1);
-    transition: transform 1s, opacity 1s;
-  }
-  &:active:after {
+    left: -50%;
+    top: 100%;
+    width: 200%;
+    height: 0;
+    padding: 200% 0 0 0;
+    margin: -100% 0 0 0;
+    .transparentBackgroundColor(@secondary_color, 0.2);
+    border-radius: 100%;
     opacity: 1;
-    transform: scale3d(0, 0, 0);
-    transition-duration: 0s;
-  }
-}
 
-header {
-  a:after {
-    background: rgba(255,255,255,0.3);
+    transform: scaleX(0) scaleY(0) scaleZ(0);
   }
-}
-button {
+
+  &.button-raised:after {
+    .transparentBackgroundColor(@primary_color, 0.2);
+  }
+
   &.button-fill:after {
-    background: rgba(255,255,255,0.3);
+    .transparentBackgroundColor(black, 0.2);
   }
 
-  &.button-float:after {
-    position: absolute;
-    margin-left: -120%;
+  &:not(:active):after {
+    animation: ripple 1s ease-in-out;
+  }
+
+  &:after {
+    visibility: hidden;
+  }
+
+  &:focus:after {
+    visibility: visible;
+  }
+}
+
+
+@keyframes ripple {
+  0% {
+    transform: scaleX(0) scaleY(0);
+  }
+  20% {
+    transform: scaleX(1) scaleY(1);
+  }
+  100% {
+    opacity: 0;
+    transform: scaleX(1) scaleY(1);
   }
 }
