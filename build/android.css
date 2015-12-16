@@ -815,48 +815,69 @@ h3 {
   font-weight: 700;
   margin: 0;
 }
-button,
-li,
-nav > a {
+button {
   position: relative;
   overflow: hidden;
 }
-button:after,
-li:after,
-nav > a:after {
+button:after {
   content: '';
-  background: rgba(0, 0, 0, 0.2);
   display: block;
   position: absolute;
-  border-radius: 50%;
-  padding-top: 240%;
-  padding-left: 240%;
-  margin-top: -100%;
-  margin-left: -50%;
-  opacity: 0;
-  -webkit-transform: scale3d(1, 1, 1);
-          transform: scale3d(1, 1, 1);
-  -webkit-transition: opacity 1s, -webkit-transform 1s;
-  transition: opacity 1s, -webkit-transform 1s;
-  transition: transform 1s, opacity 1s;
-  transition: transform 1s, opacity 1s, -webkit-transform 1s;
-}
-button:active:after,
-li:active:after,
-nav > a:active:after {
+  left: -50%;
+  top: 100%;
+  width: 200%;
+  height: 0;
+  padding: 200% 0 0 0;
+  margin: -100% 0 0 0;
+  background-color: rgba(255, 152, 0, 0.2);
+  border-radius: 100%;
   opacity: 1;
-  -webkit-transform: scale3d(0, 0, 0);
-          transform: scale3d(0, 0, 0);
-  -webkit-transition-duration: 0s;
-          transition-duration: 0s;
+  -webkit-transform: scaleX(0) scaleY(0) scaleZ(0);
+          transform: scaleX(0) scaleY(0) scaleZ(0);
 }
-header a:after {
-  background: rgba(255, 255, 255, 0.3);
+button.button-raised:after {
+  background-color: rgba(33, 150, 243, 0.2);
 }
 button.button-fill:after {
-  background: rgba(255, 255, 255, 0.3);
+  background-color: rgba(0, 0, 0, 0.2);
 }
-button.button-float:after {
-  position: absolute;
-  margin-left: -120%;
+button:not(:active):after {
+  -webkit-animation: ripple 1s ease-in-out;
+          animation: ripple 1s ease-in-out;
+}
+button:after {
+  visibility: hidden;
+}
+button:focus:after {
+  visibility: visible;
+}
+@-webkit-keyframes ripple {
+  0% {
+    -webkit-transform: scaleX(0) scaleY(0);
+            transform: scaleX(0) scaleY(0);
+  }
+  20% {
+    -webkit-transform: scaleX(1) scaleY(1);
+            transform: scaleX(1) scaleY(1);
+  }
+  100% {
+    opacity: 0;
+    -webkit-transform: scaleX(1) scaleY(1);
+            transform: scaleX(1) scaleY(1);
+  }
+}
+@keyframes ripple {
+  0% {
+    -webkit-transform: scaleX(0) scaleY(0);
+            transform: scaleX(0) scaleY(0);
+  }
+  20% {
+    -webkit-transform: scaleX(1) scaleY(1);
+            transform: scaleX(1) scaleY(1);
+  }
+  100% {
+    opacity: 0;
+    -webkit-transform: scaleX(1) scaleY(1);
+            transform: scaleX(1) scaleY(1);
+  }
 }
