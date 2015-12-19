@@ -14,17 +14,22 @@ header {
   display: flex;
   justify-content: space-between;
   h1 {
-    flex-grow: 1;
+    margin: auto;
+    position: absolute;
+    top: 0; left: 0; bottom: 0; right: 0;
     justify-content: center;
+    z-index: 0;
   }
   a.back,
   a.menu {
+    position: relative;
     display: flex;
     flex-grow: 0;
     align-items: center;
     line-height: 44px;
     height: 44px;
     padding: 0 16px;
+    z-index: 1;
 
     span {
       color: @primary_color;
