@@ -6,15 +6,17 @@
   border-radius: 8px;
   position: fixed;
   z-index: 201;
-  top: 0;
-  left: 0;
-  width: 96%;
-  height: 100%;
+  width: 90%;
   height: auto;
-  margin: 2%;
-  transform: translate3d(0, -120%, 0);
+  max-height: 90%;
+  overflow-x: hidden;
+  overflow-y: scroll;
+
+  left: 50%;
+  top: 50%;
+
+  transform: translate3d(-50%, -2500px, 0);
   transition: transform 150ms ease-in-out;
-  border-radius: 13px;
 
   h3 {
     text-align: center;
@@ -22,7 +24,7 @@
   }
   &.popup-show {
     display: block;
-    transform: translate3d(0, 10%, 0);
+    transform: translate3d(-50%, -50%, 0);
     & ~ .overlay {
       visibility: visible;
       opacity: 1;
