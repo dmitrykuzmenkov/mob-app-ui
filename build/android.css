@@ -725,14 +725,15 @@ fieldset > p select ~ label {
   box-shadow: 0 3px 7px 0 rgba(0, 0, 0, 0.26);
   position: fixed;
   z-index: 201;
-  top: 0;
-  left: 0;
-  width: 96%;
-  height: 100%;
+  width: 90%;
   height: auto;
-  margin: 2%;
-  -webkit-transform: translate3d(0, -120%, 0);
-          transform: translate3d(0, -120%, 0);
+  max-height: 90%;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate3d(-50%, -2500px, 0);
+          transform: translate3d(-50%, -2500px, 0);
   -webkit-transition: -webkit-transform 150ms ease-in-out;
   transition: -webkit-transform 150ms ease-in-out;
   transition: transform 150ms ease-in-out;
@@ -740,8 +741,8 @@ fieldset > p select ~ label {
 }
 .popup.popup-show {
   display: block;
-  -webkit-transform: translate3d(0, 10%, 0);
-          transform: translate3d(0, 10%, 0);
+  -webkit-transform: translate3d(-50%, -50%, 0);
+          transform: translate3d(-50%, -50%, 0);
 }
 .popup.popup-show ~ .overlay {
   visibility: visible;
@@ -832,8 +833,8 @@ button:after {
   background-color: rgba(255, 152, 0, 0.2);
   border-radius: 100%;
   opacity: 1;
-  -webkit-transform: scaleX(0) scaleY(0) scaleZ(0);
-          transform: scaleX(0) scaleY(0) scaleZ(0);
+  -webkit-transform: scaleX(0) scaleY(0) scaleZ(1);
+          transform: scaleX(0) scaleY(0) scaleZ(1);
 }
 button.button-raised:after {
   background-color: rgba(33, 150, 243, 0.2);

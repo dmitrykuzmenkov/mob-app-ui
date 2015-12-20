@@ -216,13 +216,19 @@ header {
           justify-content: space-between;
 }
 header h1 {
-  -webkit-box-flex: 1;
-          flex-grow: 1;
+  margin: auto;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
   -webkit-box-pack: center;
           justify-content: center;
+  z-index: 0;
 }
 header a.back,
 header a.menu {
+  position: relative;
   display: -webkit-box;
   display: flex;
   -webkit-box-flex: 0;
@@ -232,6 +238,7 @@ header a.menu {
   line-height: 44px;
   height: 44px;
   padding: 0 16px;
+  z-index: 1;
 }
 header a.back span,
 header a.menu span {
@@ -689,19 +696,19 @@ fieldset > p select ~ label {
   border-radius: 8px;
   position: fixed;
   z-index: 201;
-  top: 0;
-  left: 0;
-  width: 96%;
-  height: 100%;
+  width: 90%;
   height: auto;
-  margin: 2%;
-  -webkit-transform: translate3d(0, -120%, 0);
-          transform: translate3d(0, -120%, 0);
+  max-height: 90%;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate3d(-50%, -2500px, 0);
+          transform: translate3d(-50%, -2500px, 0);
   -webkit-transition: -webkit-transform 150ms ease-in-out;
   transition: -webkit-transform 150ms ease-in-out;
   transition: transform 150ms ease-in-out;
   transition: transform 150ms ease-in-out, -webkit-transform 150ms ease-in-out;
-  border-radius: 13px;
 }
 .popup h3 {
   text-align: center;
@@ -709,8 +716,8 @@ fieldset > p select ~ label {
 }
 .popup.popup-show {
   display: block;
-  -webkit-transform: translate3d(0, 10%, 0);
-          transform: translate3d(0, 10%, 0);
+  -webkit-transform: translate3d(-50%, -50%, 0);
+          transform: translate3d(-50%, -50%, 0);
 }
 .popup.popup-show ~ .overlay {
   visibility: visible;
