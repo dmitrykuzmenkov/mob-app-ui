@@ -19,9 +19,8 @@ button {
   font-family: inherit;
   cursor: pointer;
   outline: 0;
-  &:active {
-    .transparentBackgroundColor(@primary_color, .2);
-  }
+  .transparentTapColor(@primary_color, .2);
+
   &.button-raised {
     border: 1px solid @primary_color;
   }
@@ -30,6 +29,7 @@ button {
     color: #fff;
     background: @primary_color;
     border: none;
+    .transparentTapColor(#cbcbcb, .2);
   }
 
   &.button-float {

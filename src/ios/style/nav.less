@@ -43,10 +43,7 @@ nav {
     outline: 0;
     border-left-width: 0;
     width: 100%;
-
-    &:active {
-      .transparentBackgroundColor(@primary_color, .2);
-    }
+    .transparentTapColor(@primary_color, .2);
 
     &:first-child {
       border-radius: 5px 0 0 5px;
@@ -58,6 +55,7 @@ nav {
     }
     &.active {
       background-color: @primary_color;
+      .transparentTapColor(#cbcbcb, .2);
       color: #fff;
     }
   }
