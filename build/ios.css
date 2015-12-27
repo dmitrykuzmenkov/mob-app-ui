@@ -310,12 +310,7 @@ nav a:hover {
   outline: 0;
   border-left-width: 0;
   width: 100%;
-}
-nav a:active,
-nav a:visited:active,
-nav a:active:active,
-nav a:hover:active {
-  background-color: rgba(33, 150, 243, 0.2);
+  -webkit-tap-highlight-color: rgba(33, 150, 243, 0.2);
 }
 nav a:first-child,
 nav a:visited:first-child,
@@ -336,6 +331,7 @@ nav a:visited.active,
 nav a:active.active,
 nav a:hover.active {
   background-color: #2196f3;
+  -webkit-tap-highlight-color: rgba(203, 203, 203, 0.2);
   color: #fff;
 }
 nav ~ main {
@@ -363,9 +359,7 @@ button {
   font-family: inherit;
   cursor: pointer;
   outline: 0;
-}
-button:active {
-  background-color: rgba(33, 150, 243, 0.2);
+  -webkit-tap-highlight-color: rgba(33, 150, 243, 0.2);
 }
 button.button-raised {
   border: 1px solid #2196f3;
@@ -374,6 +368,7 @@ button.button-fill {
   color: #fff;
   background: #2196f3;
   border: none;
+  -webkit-tap-highlight-color: rgba(203, 203, 203, 0.2);
 }
 button.button-float {
   display: none;
