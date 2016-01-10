@@ -760,29 +760,29 @@ fieldset > p select ~ label {
   display: inline-block;
 }
 .icon.icon-back {
-  background-image: url(data:image/svg+xml;base64,PHN2ZyBoZWlnaHQ9IjI0IiB2aWV3Qm94PSIwIDAgMjQgMjQiIHdpZHRoPSIyNCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cGF0aCBkPSJNMjAgMTFINy44M2w1LjU5LTUuNTlMMTIgNGwtOCA4IDggOCAxLjQxLTEuNDFMNy44MyAxM0gyMHYtMnoiIGZpbGw9IiNmZmYiLz48L3N2Zz4=);
+  background-image: url("data:image/svg+xml,%3Csvg%20height%3D'24'%20viewBox%3D'0%200%2024%2024'%20width%3D'24'%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%3E%3Cpath%20d%3D'M20%2011H7.83l5.59-5.59L12%204l-8%208%208%208%201.41-1.41L7.83%2013H20v-2z'%20fill%3D'%23ffffff'%2F%3E%3C%2Fsvg%3E%0A");
 }
 .icon.icon-forward {
-  background-image: url(data:image/svg+xml;base64,PHN2ZyBoZWlnaHQ9IjI0IiB2aWV3Qm94PSIwIDAgMjQgMjQiIHdpZHRoPSIyNCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cGF0aCBkPSJNMTIgNGwtMS40MSAxLjQxTDE2LjE3IDExSDR2MmgxMi4xN2wtNS41OCA1LjU5TDEyIDIwbDgtOHoiIGZpbGw9IiNmZmYiLz48L3N2Zz4=);
+  background-image: url("data:image/svg+xml,%3Csvg%20height%3D'24'%20viewBox%3D'0%200%2024%2024'%20width%3D'24'%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%3E%3Cpath%20d%3D'M12%204l-1.41%201.41L16.17%2011H4v2h12.17l-5.58%205.59L12%2020l8-8z'%20fill%3D'%23ffffff'%2F%3E%3C%2Fsvg%3E%0A");
 }
 .icon.icon-bars {
-  background-image: url(data:image/svg+xml;base64,PHN2ZyBoZWlnaHQ9IjI0IiB2aWV3Qm94PSIwIDAgMjQgMjQiIHdpZHRoPSIyNCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cGF0aCBkPSJNMyAxOGgxOHYtMkgzdjJ6bTAtNWgxOHYtMkgzdjJ6bTAtN3YyaDE4VjZIM3oiIGZpbGw9IiNmZmYiLz48L3N2Zz4=);
+  background-image: url("data:image/svg+xml,%3Csvg%20height%3D'24'%20viewBox%3D'0%200%2024%2024'%20width%3D'24'%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%3E%3Cpath%20d%3D'M3%2018h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z'%20fill%3D'%23ffffff'%2F%3E%3C%2Fsvg%3E%0A");
 }
 .icon.icon-next {
-  background-image: url(data:image/svg+xml;base64,PHN2ZyBmaWxsPSIjZmZmIiBoZWlnaHQ9IjI0IiB2aWV3Qm94PSIwIDAgMjQgMjQiIHdpZHRoPSIyNCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cGF0aCBkPSJNMTAgNkw4LjU5IDcuNDEgMTMuMTcgMTJsLTQuNTggNC41OUwxMCAxOGw2LTZ6Ii8+PHBhdGggZD0iTTAgMGgyNHYyNEgweiIgZmlsbD0ibm9uZSIvPjwvc3ZnPg==);
+  background-image: url("data:image/svg+xml,%3Csvg%20fill%3D'%23ffffff'%20height%3D'24'%20viewBox%3D'0%200%2024%2024'%20width%3D'24'%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%3E%3Cpath%20d%3D'M10%206L8.59%207.41%2013.17%2012l-4.58%204.59L10%2018l6-6z'%2F%3E%3Cpath%20d%3D'M0%200h24v24H0z'%20fill%3D'none'%2F%3E%3C%2Fsvg%3E%0A");
 }
 .icon.icon-prev {
-  background-image: url(data:image/svg+xml;base64,PHN2ZyBmaWxsPSIjZmZmIiBoZWlnaHQ9IjI0IiB2aWV3Qm94PSIwIDAgMjQgMjQiIHdpZHRoPSIyNCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cGF0aCBkPSJNMTUuNDEgNy40MUwxNCA2bC02IDYgNiA2IDEuNDEtMS40MUwxMC44MyAxMnoiLz48cGF0aCBkPSJNMCAwaDI0djI0SDB6IiBmaWxsPSJub25lIi8+PC9zdmc+);
+  background-image: url("data:image/svg+xml,%3Csvg%20fill%3D'%23ffffff'%20height%3D'24'%20viewBox%3D'0%200%2024%2024'%20width%3D'24'%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%3E%3Cpath%20d%3D'M15.41%207.41L14%206l-6%206%206%206%201.41-1.41L10.83%2012z'%2F%3E%3Cpath%20d%3D'M0%200h24v24H0z'%20fill%3D'none'%2F%3E%3C%2Fsvg%3E%0A");
 }
 .icon.icon-plus {
   width: 24px;
   height: 24px;
   font-size: 0;
-  background-image: url(data:image/svg+xml;base64,PHN2ZyBmaWxsPSIjZmZmIiBoZWlnaHQ9IjI0IiB2aWV3Qm94PSIwIDAgMjQgMjQiIHdpZHRoPSIyNCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cGF0aCBkPSJNMTkgMTNoLTZ2NmgtMnYtNkg1di0yaDZWNWgydjZoNnYyeiIvPjxwYXRoIGQ9Ik0wIDBoMjR2MjRIMHoiIGZpbGw9Im5vbmUiLz48L3N2Zz4=);
+  background-image: url("data:image/svg+xml,%3Csvg%20fill%3D'%23ffffff'%20height%3D'24'%20viewBox%3D'0%200%2024%2024'%20width%3D'24'%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%3E%3Cpath%20d%3D'M19%2013h-6v6h-2v-6H5v-2h6V5h2v6h6v2z'%2F%3E%3Cpath%20d%3D'M0%200h24v24H0z'%20fill%3D'none'%2F%3E%3C%2Fsvg%3E%0A");
 }
 .preloader {
   display: block;
-  background: url(data:image/svg+xml;base64,PHN2ZyB2aWV3Qm94PSIwIDAgMTAwIDEwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cGF0aCBkPSJNMjkuNDkyIDYwLjQxM2M1Ljc1IDExLjMyNCAxOS41OTcgMTUuODQ1IDMwLjkyIDEwLjA5NVM3Ni4yNiA1MC45MSA3MC41MSAzOS41ODhtLTMuNDc4IDEuNzY1YzQuNzU0IDkuMzYyIDEuMDcgMjAuODc4LTguMzgzIDI1LjY3N3MtMjAuOTIzLjk4LTI1LjY3Ny04LjM4MyIgZmlsbD0iIzc1NzU3NSI+PGFuaW1hdGVUcmFuc2Zvcm0gYXR0cmlidXRlTmFtZT0idHJhbnNmb3JtIiBhdHRyaWJ1dGVUeXBlPSJYTUwiIGR1cj0iMXMiIGZyb209IjAgNTAgNTAiIHJlcGVhdENvdW50PSJpbmRlZmluaXRlIiB0bz0iMzYwIDUwIDUwIiB0eXBlPSJyb3RhdGUiLz48L3BhdGg+PC9zdmc+);
+  background: url("data:image/svg+xml,%3Csvg%20enable-background%3D%22new%200%200%200%200%22%20id%3D%22L9%22%20version%3D%221.1%22%20viewBox%3D%220%200%20100%20100%22%20x%3D%220px%22%20xml%3Aspace%3D%22preserve%22%20xmlns%3Axlink%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20y%3D%220px%22%3E%0A%20%20%3Cpath%20d%3D%22M73%2C50c0-12.7-10.3-23-23-23S27%2C37.3%2C27%2C50%20M30.9%2C50c0-10.5%2C8.5-19.1%2C19.1-19.1S69.1%2C39.5%2C69.1%2C50%22%20fill%3D%22%23757575%22%20transform%3D%22rotate(153.08%2050%2050)%22%3E%0A%20%20%20%20%3CanimateTransform%20attributeName%3D%22transform%22%20attributeType%3D%22XML%22%20dur%3D%221s%22%20from%3D%220%2050%2050%22%20repeatCount%3D%22indefinite%22%20to%3D%22360%2050%2050%22%20type%3D%22rotate%22%3E%3C%2FanimateTransform%3E%0A%20%20%3C%2Fpath%3E%0A%3C%2Fsvg%3E%0A");
   width: 48px;
   height: 48px;
   background-position: 50%;
@@ -855,31 +855,31 @@ button:focus:after {
 }
 @-webkit-keyframes ripple {
   0% {
-    -webkit-transform: scaleX(0) scaleY(0);
-            transform: scaleX(0) scaleY(0);
+    -webkit-transform: scaleX(0) scaleY(0) scaleZ(1);
+            transform: scaleX(0) scaleY(0) scaleZ(1);
   }
   20% {
-    -webkit-transform: scaleX(1) scaleY(1);
-            transform: scaleX(1) scaleY(1);
+    -webkit-transform: scaleX(1) scaleY(1) scaleZ(1);
+            transform: scaleX(1) scaleY(1) scaleZ(1);
   }
   100% {
     opacity: 0;
-    -webkit-transform: scaleX(1) scaleY(1);
-            transform: scaleX(1) scaleY(1);
+    -webkit-transform: scaleX(1) scaleY(1) scaleZ(1);
+            transform: scaleX(1) scaleY(1) scaleZ(1);
   }
 }
 @keyframes ripple {
   0% {
-    -webkit-transform: scaleX(0) scaleY(0);
-            transform: scaleX(0) scaleY(0);
+    -webkit-transform: scaleX(0) scaleY(0) scaleZ(1);
+            transform: scaleX(0) scaleY(0) scaleZ(1);
   }
   20% {
-    -webkit-transform: scaleX(1) scaleY(1);
-            transform: scaleX(1) scaleY(1);
+    -webkit-transform: scaleX(1) scaleY(1) scaleZ(1);
+            transform: scaleX(1) scaleY(1) scaleZ(1);
   }
   100% {
     opacity: 0;
-    -webkit-transform: scaleX(1) scaleY(1);
-            transform: scaleX(1) scaleY(1);
+    -webkit-transform: scaleX(1) scaleY(1) scaleZ(1);
+            transform: scaleX(1) scaleY(1) scaleZ(1);
   }
 }
