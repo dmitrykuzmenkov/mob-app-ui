@@ -10,6 +10,12 @@ But you can use it also on your mobile site.
 The main idea is - use minimum as you can to simplify common wide used mobile elements.
 Need more? Develop it yourself for your needs.
 
+## Demo
+Check out how does it look like online.
+
+Android example: http://dmitrykuzmenkov.github.io/mob-app-ui/android.html
+IOS example: http://dmitrykuzmenkov.github.io/mob-app-ui/ios.html
+
 ## Installation
 You can direct git clone repository or use npm.
 

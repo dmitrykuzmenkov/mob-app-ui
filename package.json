@@ -1,6 +1,6 @@
 {
   "name": "mob-app-ui",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Mobile CSS UI for hybrid application development",
   "keywords": ["mobile", "style", "hybrid", "ui", "interface", "application", "mob-app-ui"],
   "main": "index.js",
