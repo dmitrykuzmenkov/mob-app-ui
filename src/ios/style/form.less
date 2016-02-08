@@ -114,13 +114,12 @@ fieldset > p {
     box-sizing: border-box;
     background-color: transparent;
     width: 100%;
-    padding-top: 100px;
     font-size: 17px;
-    padding: 5px 0;
+    padding: 20px 8px;
     display: block;
-    border: none;
-    border-bottom: 1px solid #757575;
+    border: 1px solid #cbcbcb;
     margin-top: 1em;
+
     &:focus {
       outline: none;
       & ~ .bar:after {
@@ -131,14 +130,15 @@ fieldset > p {
       }
     }
     &:not(select):valid ~ label {
-      transform: translate3d(0, -13px, 0) scale3d(.8, .8, 1);
+      transform: translate3d(-5px, -5px, 0) scale3d(.6, .6, 1);
       color: @primary_color;
     }
   }
   label {
     color: #757575;
     font-size: 16px;
-    transform: translate3d(0, 5px, 0) scale3d(1, 1, 1);
+    margin-left: 8px;
+    transform: translate3d(0, 8px, 0) scale3d(1, 1, 1);
     font-weight: normal;
     position: absolute;
     pointer-events: none;
