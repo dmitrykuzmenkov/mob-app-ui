@@ -119,16 +119,11 @@ fieldset > p {
     display: block;
     border: 1px solid #cbcbcb;
     margin-top: 1em;
-
+    transition: border 150ms ease;
     &:focus {
-      outline: none;
-      & ~ .bar:after {
-        transform: scale3d(1, 1, 1);
-      }
-      & ~ .highlight {
-        animation: inputHighlighter 150ms ease-in-out;
-      }
+      border: 1px @primary_color solid;
     }
+
     &:not(select):valid ~ label {
       transform: translate3d(-5px, -5px, 0) scale3d(.6, .6, 1);
       color: @primary_color;
@@ -149,31 +144,6 @@ fieldset > p {
     left: 0;
     top: 0;
     transition: transform 150ms ease-in-out;
-  }
-  .bar {
-    position: relative;
-    display: block;
-    width: auto;
-    &:after {
-      content: "";
-      height: 2px;
-      width: 100%;
-      bottom: 0;
-      position: absolute;
-      background: @primary_color;
-      box-sizing: border-box;
-      transform: scale3d(0, 0, 0);
-      transition: transform 150ms ease-in-out;
-    }
-  }
-  .highlight {
-    position: absolute;
-    height: 60%;
-    width: 100px;
-    top: 25%;
-    left: 0;
-    pointer-events: none;
-    opacity: 0.5;
   }
   select {
     direction: rtl;
