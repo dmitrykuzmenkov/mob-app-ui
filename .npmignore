@@ -3,3 +3,4 @@ asset/**
 webpack.config.js
 Makefile
 index.html
+.editorconfig
